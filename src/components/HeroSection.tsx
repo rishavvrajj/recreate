@@ -8,7 +8,7 @@ export default function HeroSection() {
             <NavBar />
             <div className='flex items-end justify-between px-8 h-[35vh] w-full space-y-2 bg-[#BCBDB5]'>
                 <div className='h-50 w-full mb-12 -ml-8 '>
-                    <img className='scale-y-[-1]' src="png.png" alt="" />
+                    <img className='scale-y-[-1]' src="/foreground.png" alt="" />
                 </div>
                 <div className='flex flex-col items-end justify-end space-y-4'>
                     <h1 className='text-white text-3xl font-bold leading-none tracking-widest'>03-2</h1>
@@ -51,7 +51,7 @@ export default function HeroSection() {
                 </div>
                 <div className='flex h-[30vh] w-[30vw]'>
                     <div className='h-full w-1/2'>
-                        <img src="/image.png" alt="" />
+                        <img src="/profile.png" alt="" />
                     </div>
                     <div className='w-1/2 px-4 flex flex-col items-end justify-end space-y-8'>
                         <h1 className='text-sm font-medium'><span className='font-bold'>Seed</span><br /> <p className='font-semibold text-[9px] tracking-tight leading-tight'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></h1>
