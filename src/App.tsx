@@ -3,9 +3,9 @@ import HeroSection from './components/HeroSection'
 function App() {
 
   return (
-    <>
-    <HeroSection />
-    </>
+    <div className=''>
+      <HeroSection />
+    </div>
   )
 }
 

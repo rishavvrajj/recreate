@@ -1,61 +1,44 @@
-import { ArrowDownLeft, ArrowDownRight } from 'lucide-react'
+import { Star } from 'lucide-react'
 import Footer from './Footer'
 import NavBar from './NavBar'
 
 export default function HeroSection() {
     return (
-        <section className=''>
+        <section className='bg-black/5 mx-20 text-[#252525]'>
             <NavBar />
-            <div className='flex items-end justify-between px-8 h-[35vh] w-full space-y-2 bg-[#BCBDB5]'>
-                <div className='h-50 w-full mb-12 -ml-8 '>
-                    <img className='scale-y-[-1]' src="/foreground.png" alt="" />
-                </div>
-                <div className='flex flex-col items-end justify-end space-y-4'>
-                    <h1 className='text-white text-3xl font-bold leading-none tracking-widest'>03-2</h1>
-                    <h2 className='text-white text-5xl font-bold leading-none tracking-widest flex items-end gap-8'><ArrowDownLeft size={36} /> 中国人中国</h2>
-                    <h2 className='text-black text-9xl font-bold leading-26'>Negative</h2>
-                </div>
-            </div>
-            <div className='flex items-center justify-center px-8 space-x-12 h-[55vh] bg-[#E6E6DA]'>
-                <div className='h-[30vh] w-[30vw] leading-26 flex items-end justify-center text-9xl text-[#BCBDB5] font-bold'>
-                    03
-                </div>
-                <div className='h-[30vh] w-[30vw] font-semibold space-y-4 flex flex-col items-start justify-end'>
-                    <h6 className='text-xs'>
-                        <span>A.&nbsp;&nbsp; THE SEED FEELING AT EASE <br /></span>
-                        <span>B.&nbsp;&nbsp; SHAPE OF DESIRE <br /></span>
-                        <span>C.&nbsp;&nbsp; PERFECT GRAPHIC DESIGN</span>
-                    </h6>
-                    <p className='text-xs'>
-                        Maintaining a desired mental state, but not every spring rule
-                        will arrive as scheduled, so just wait quietly. The more
-                        restless you become, the more energy gets lost.
-                    </p>
-                </div>
-                <div className='h-[30vh] w-[30vw] flex items-end justify-end'>
-                    <div className='m-0 p-0 flex items-end justify-center w-1/2 h-full'>
-                        <ArrowDownRight className='block text-[#BCBDB5] -m-12 p-0' size={212} />
+            <div className='flex flex-col items-center justify-center mx-8 h-[60vh]'>
+                <div className="flex items-start justify-between w-full">
+                    <div className="w-60 h-100">
+                        <div className='flex flex-col items-start justify-between h-full'>
+                            <div className='space-y-2'>
+                                <img className='h-60 w-45' src="/profile.png" alt="" />
+                                <div className='space-y-2'>
+                                    <h1 className='text-lg font-semibold underline underline-offset-4'>ネクスヴィン</h1>
+                                    <p className='text-sm text-[#818181]'>Nexvyn <br />reverse-engineer <br /> design, dev, reverse</p>
+                                </div>
+                            </div>
+                            <p className='text-sm text-[#4f4e4e] font-semibold text-justify'>Hi, I'm Nexvyn. I'm a design engineer who cares about the details.</p>
+                        </div>
                     </div>
-                    <div className='w-1/2 whitespace-pre-line space-y-8 font-bold'>
-                        <h6 className='text-end text-md'>
-                            01. 混成界分
-                        </h6>
-                        <p className='text-xs text-justify'>
-                            Maintain a desired mental
-                            state, but not every spring
-                            rainfall will arrive as
-                            scheduled, so just wait
-                            quietly.
-                        </p>
+                    <div className="w-108 h-100 flex flex-col items-start justify-between space-y-2">
+                        <div className='w-full space-y-2'>
+                            <h1 className='flex items-center justify-between'>
+                                <span className='text-md italic font-semibold tracking-widest'>nexvyn/ui</span>
+                                <span className='flex items-center gap-1 text-sm font-semibold tracking-widest'><Star className='' fill='' size={12} />202</span>
+                            </h1>
+                            <img className='border-[#a0a0a0] w-full h-70 border-2 rounded-lg' src="/p1.png" alt="" />
+                        </div>
+                        <p className='text-sm text-justify text-[#4f4e4e] font-semibold'>Animated UI components built with spring physics and fluid interactions. Crafted for shadcn/ui and Radix primitives. Drop-in components that make every state change feel natural.</p>
                     </div>
-                </div>
-                <div className='flex h-[30vh] w-[30vw]'>
-                    <div className='h-full w-1/2'>
-                        <img src="/profile.png" alt="" />
-                    </div>
-                    <div className='w-1/2 px-4 flex flex-col items-end justify-end space-y-8'>
-                        <h1 className='text-sm font-medium'><span className='font-bold'>Seed</span><br /> <p className='font-semibold text-[9px] tracking-tight leading-tight'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></h1>
-                        <h1 className='text-sm font-medium'><span className='font-bold'>Seed</span><br /> <p className='font-semibold text-[9px] tracking-tight leading-tight'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></h1>
+                    <div className="w-108 h-100 flex flex-col items-start justify-between space-y-2">
+                        <div className='w-full space-y-2'>
+                            <h1 className='flex items-center justify-between'>
+                                <span className='text-md italic font-semibold tracking-widest'>rune icons</span>
+                                <span className='flex items-center gap-1 text-sm font-semibold tracking-widest'><Star className='' fill='' size={12} />522</span>
+                            </h1>
+                            <img className='border-[#a0a0a0] w-full h-70 border-2 rounded-lg' src="/p2.png" alt="" />
+                        </div>
+                        <p className='text-sm text-justify text-[#4f4e4e] font-semibold'>Open-source icon library with 900+ icons, each available in five distinct styles. Built for fast searching, reshaping, and copying icons as SVG or JSX.</p>
                     </div>
                 </div>
             </div>

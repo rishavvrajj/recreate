@@ -1,17 +1,14 @@
 export default function NavBar() {
     return (
-        <nav className='flex items-center justify-between px-8 h-[5vh] bg-neutral-800 text-sm text-white'>
-            <div className="w-30 hover:cursor-pointer">Negative</div>
+        <nav className='flex items-center justify-between mx-8 h-[5vh] border-b border-[#252525] text-[#252525] text-sm font-semibold tracking-widest'>
+            <div className="w-full text-nowrap hover:cursor-pointer">Monday, September 21, 2026 3:03 AM</div>
             
-            <div className="flex justify-center space-x-8 w-80">
-                <a className="hover:cursor-pointer hover:text-white/80 lowercase" href="">Work</a>
-                <a className="hover:cursor-pointer hover:text-white/80 lowercase" href="">Philiosphy</a>
-                <a className="hover:cursor-pointer hover:text-white/80 lowercase" href="">Service</a>
-                <a className="hover:cursor-pointer hover:text-white/80 lowercase" href="">Contact</a>
+            <div className="flex justify-center space-x-8 w-full">
+                <a className="hover:cursor-pointer hover:text-black/80 lowercase" href="">Nexvyn</a>
             </div>
 
-            <div className="flex justify-end w-30">
-                <button className="hover:cursor-pointer hover:text-white/80">Sign in</button>
+            <div className="flex justify-end w-full">
+                <button className="hover:cursor-pointer hover:text-black/80">hello@nexvyn.dev</button>
             </div>
         </nav>
     )
