@@ -14,9 +14,9 @@ export default function HeroSection() {
                 </div>
                 <div className='h-full w-1/2 flex'>
                     <div className='flex flex-col w-2/5 space-y-4'>
-                        <a className='text-lg font-bold text-zinc-900' href="">Brand Stratery</a>
+                        <a className='text-lg font-bold text-zinc-900' href="">Brand Strategy</a>
                         <a className='text-lg font-bold text-zinc-700' href="">Product Design</a>
-                        <a className='text-lg font-bold text-zinc-700' href="">Devlopment</a>
+                        <a className='text-lg font-bold text-zinc-700' href="">Development</a>
                         <a className='text-lg font-bold text-zinc-700' href="">Motion Design</a>
                     </div>
                     <div className='h-full w-full overflow-hidden'>

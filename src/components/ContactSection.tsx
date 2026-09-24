@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 export default function ContactSection() {
     return (
         <section className="min-h-screen w-full flex">
-            <div className="w-1/2 flex flex-col items-start justify-center px-16 space-y-12">
+            <div className="w-1/2 flex flex-col items-start justify-center pl-8 pr-16 space-y-12">
                 <h1 className="font-[ClashDisplay] text-8xl text-zinc-900">Contact us</h1>
                 <div className="flex w-full justify-between pr-12">
                     <div className="flex flex-col space-y-4">
@@ -37,7 +37,7 @@ export default function ContactSection() {
                 </div>
             </div>
 
-            <div className="w-1/2 min-h-screen flex items-end justify-end mb-24 px-16">
+            <div className="w-1/2 min-h-screen flex items-end justify-end mb-24 pr-8 pl-16">
                 <div className="w-3/4 space-y-8">
                     <h1 className="font-[ClashDisplay] text-3xl text-zinc-900">Send a line about your project</h1>
                     <form className="space-y-12" onSubmit={(e) => e.preventDefault()}>

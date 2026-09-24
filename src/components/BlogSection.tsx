@@ -1,7 +1,7 @@
 export default function BlogSection() {
     return (
-        <div className="w-full flex-col h-screen px-12 flex items-start justify-between">
-            <h1 className="font-[clashdisplay] text-8xl">Blog & articles</h1>
+        <section className="w-full flex flex-col h-screen px-8 items-start justify-between">
+            <h1 className="font-[ClashDisplay] text-8xl text-zinc-900">Blog & articles</h1>
             <div className="grid grid-cols-3 h-full w-full items-center gap-6">
                 <div className="py-4 space-y-4 flex flex-col justify-center">
                     <div className="h-4/5 w-full overflow-hidden">
@@ -22,6 +22,6 @@ export default function BlogSection() {
                     <p className="text-2xl font-bold">5 common UX design mistakes and how to avoid them</p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

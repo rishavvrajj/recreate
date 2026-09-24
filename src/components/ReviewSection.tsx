@@ -13,7 +13,7 @@ const Stars = () => (
 // Border classes per cell to recreate the 3×2 grid lines
 export default function ReviewSection() {
     return (
-        <section className="w-full h-full px-16 flex flex-col items-center justify-evenly space-y-8">
+        <section className="w-full h-full px-8 flex flex-col items-center justify-evenly space-y-8">
             <h1 className="font-[ClashDisplay] text-8xl text-left w-full text-zinc-900 py-2">
                 Client reviews
             </h1>
@@ -24,7 +24,7 @@ export default function ReviewSection() {
                     <div className="flex flex-col items-start justify-between h-80 py-12">
                         <Stars />
                         <div className="w-3/5 space-y-2">
-                            <h1 className="text-zinc-900 text-lg">I am working with Viragǒ studio️ was a pleasure.</h1>
+                            <h1 className="text-zinc-900 text-lg">Working with Viragǒ studio️ was a pleasure.</h1>
                             <p className="text-xs text-zinc-800">"Their team turned our vision into a digital masterpiece, with stunning design and seamless functionality. We're thrilled with the results."</p>
                         </div>
                         <div className="flex items-center justify-center space-x-2">
