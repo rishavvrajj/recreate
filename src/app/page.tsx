@@ -31,7 +31,15 @@ export default function Page() {
 
   return (
     <div className="relative flex min-h-screen w-full items-center justify-center">
+      <div className="max-w-md z-0 absolute h-full w-full">
+        <div className="absolute h-full w-full border-x border-transparent [border-image:repeating-linear-gradient(315deg,var(--pattern-bg)_0_4px,transparent_2px_8px)_1]" />
+      </div>
+      <div className="absolute z-0 max-h-2/3 h-full w-full">
+        <div className="absolute h-full w-full border-y border-transparent [border-image:repeating-linear-gradient(315deg,var(--pattern-bg)_0_4px,transparent_2px_8px)_1]" />
+      </div>
       <Pattern />
+      <Pattern2 />
+      <Pattern3 />
       <div className="relative flex flex-col justify-between h-76 w-80 overflow-hidden rounded-xl border border-neutral-300/40 dark:border-neutral-800/40 bg-neutral-200/80 dark:bg-stone-950 shadow-lg">
         <div className="flex flex-col justify-between h-52 dark:bg-stone-900/30 bg-neutral-100 m-1 border border-neutral-200/30 dark:border-neutral-800/40 rounded-xl">
           <div className="relative h-2/5 mx-4 mask-b-from-70% mask-t-from-70% mask-r-from-70% mask-l-from-70%">
@@ -77,6 +85,18 @@ export default function Page() {
 
 const Pattern = () => {
   return (
-    <div className="absolute inset-0 m-auto rounded-[28px] bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed opacity-60" />
+    <div className="absolute inset-0 m-auto bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed opacity-60" />
+  )
+}
+
+const Pattern2 = () => {
+  return (
+    <div className="absolute inset-0 m-auto bg-[repeating-linear-gradient(270deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed opacity-60" />
+  )
+}
+
+const Pattern3 = () => {
+  return (
+    <div className="absolute inset-0 m-auto bg-[repeating-linear-gradient(225deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed opacity-60" />
   )
 }
