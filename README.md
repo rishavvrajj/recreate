@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Follow My Work
 
-## Getting Started
+I share what I’m building, experimenting with, and learning on X.
 
-First, run the development server:
+From recreating interfaces I like to exploring new ideas in frontend development, I document the process as I learn and improve.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Follow me on X →](https://x.com/rishavvrajj)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<a href="https://x.com/rishavvrajj">
+  <img
+    width="1080"
+    height="360"
+    alt="Follow me on X"
+    src="https://github.com/user-attachments/assets/f6193d8e-7725-4c89-b4ac-0d32b033cbbb"
+  />
+</a>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Why I Do This
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I reverse-engineer designs I like and rebuild them from scratch to understand **why they work and how they are built**.
 
-## Learn More
+| Goal                      | What I Learn                                                       |
+| ------------------------- | ------------------------------------------------------------------ |
+| Study good design         | Visual hierarchy, spacing, typography, color, and composition      |
+| Improve frontend skills   | React, Next.js, TypeScript, and CSS                                |
+| Understand responsiveness | How layouts adapt across different screen sizes                    |
+| Practice component design | Building reusable and maintainable components                      |
+| Learn through iteration   | Comparing, testing, refining, and improving                        |
+| Develop design sense      | Understanding the small details that make interfaces feel polished |
 
-To learn more about Next.js, take a look at the following resources:
+These projects are personal learning experiments. They are created independently for educational purposes. I don't use private source code or claim the original work as my own.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How I Do It
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Step | Process                                                                        |
+| ---- | ------------------------------------------------------------------------------ |
+| 01   | **Find** — Choose an interface, component, animation, or visual idea I like    |
+| 02   | **Study** — Analyze its layout, typography, spacing, colors, and interactions  |
+| 03   | **Break Down** — Separate the design into smaller sections and components      |
+| 04   | **Build** — Recreate the idea using React, Next.js, TypeScript, and CSS        |
+| 05   | **Refine** — Tune spacing, typography, colors, transitions, and visual details |
+| 06   | **Test** — Check the interface across different screen sizes                   |
+| 07   | **Iterate** — Compare the result, find what's missing, and improve it          |
+| 08   | **Document** — Write down useful techniques, challenges, and lessons           |
 
-## Deploy on Vercel
+## What I Learn
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Area                   | Focus                                              |
+| ---------------------- | -------------------------------------------------- |
+| Frontend Development   | React, Next.js, TypeScript, and CSS                |
+| UI Design              | Layout, spacing, typography, color, and hierarchy  |
+| Responsive Design      | Flexible layouts across different screen sizes     |
+| Component Architecture | Reusable, organized, and understandable components |
+| Product Thinking       | Usability, accessibility, and user experience      |
+| Problem Solving        | Turning visual references into working interfaces  |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## The Point
+
+I don't recreate things just to make a copy.
+
+I recreate them to **understand them**.
+
+Every project gives me a chance to look closer at how a design is structured, how an interaction works, and how small decisions come together to create a polished interface.
+
+For me, building is a way of learning.
