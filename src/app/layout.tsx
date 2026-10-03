@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "/openGraph.png",
         width: 1200,
         height: 630,
-        alt: "Rishav Raj — reverse‑engineering designs to learn",
+        alt: "rishav — reverse‑engineering designs to learn",
       },
     ],
   },
