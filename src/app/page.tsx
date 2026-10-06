@@ -1,10 +1,39 @@
 'use client'
 
-import { Link } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { FaGithub } from 'react-icons/fa'
-import { FaXTwitter } from 'react-icons/fa6'
+import { BiRightArrowAlt } from 'react-icons/bi'
+
+const categories = [
+  {
+    title: "Web Design",
+    description: "Craft engaging, user-friendly websites",
+    tags: ["Landing Page", "Portfolio", "Dashboard"],
+    color: "bg-cyan-200/60",
+    tagColor: "bg-cyan-300/40",
+  },
+  {
+    title: "Product Design",
+    description: "Design useful and delightful digital products",
+    tags: ["UX Research", "Wireframes", "Prototypes"],
+    color: "bg-orange-200/70",
+    tagColor: "bg-orange-300/50",
+  },
+  {
+    title: "Development",
+    description: "Build fast, scalable web applications",
+    tags: ["React", "Next.js", "TypeScript"],
+    color: "bg-violet-200/70",
+    tagColor: "bg-violet-300/50",
+  },
+  {
+    title: "Business Analytics",
+    description: "Turn complex data into clear insights",
+    tags: ["Tableau", "Reports", "KPIs"],
+    color: "bg-emerald-200/70",
+    tagColor: "bg-emerald-300/50",
+  },
+];
 
 export default function page() {
   const { theme, setTheme } = useTheme()
@@ -43,73 +72,48 @@ export default function page() {
 
   return (
     <main
-      style={{ backgroundImage: "url('/background.png')" }}
+      style={{ backgroundImage: "url('/background-2.png')" }}
       className="flex min-h-screen w-full items-center justify-center bg-cover bg-center bg-no-repeat p-4"
     >
-      
-      <section className="relative w-full max-w-xs overflow-hidden rounded-2xl border-2 border-neutral-900 bg-neutral-900 shadow-xl">
-        {/* Cover image */}
-        <div
-          style={{ backgroundImage: "url('/cover.png')" }}
-          className="h-40 bg-cover bg-center bg-no-repeat"
-        />
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-8">
+        {categories.map((category) => (
+          <div
+            key={category.title}
+            className="flex h-full w-56 flex-col items-center justify-between rounded-xl bg-neutral-50 text-neutral-900 border border-neutral-200 p-2"
+          >
+            <div
+              className={`flex h-full gap-4 w-full flex-col items-start justify-between rounded-lg p-3 ${category.color}`}
+            >
+              <div>
+                <h2 className="text-lg font-extrabold">{category.title}</h2>
 
-        {/* Avatar */}
-        <div className="absolute flex items-end justify-between px-4 top-28 h-24 w-full">
-          <div className='overflow-hidden w-24 h-24 rounded-2xl border-2 border-neutral-900 bg-neutral-800 shadow-lg'>
-            <img
-              src="/profile.png"
-              alt="Rishav's profile"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="flex w-fit items-center py-3 gap-2 text-neutral-200">
-            <FaXTwitter size={18} color="" />
-            <FaGithub size={18} color="" />
+                <p className="mt-1 text-sm leading-5 text-neutral-700">
+                  {category.description}
+                </p>
+              </div>
 
-            <button onClick={SwitchTheme} className="rounded-xl bg-neutral-200 px-4 text-neutral-900">
-              Follow
+              <div className="flex flex-wrap gap-2">
+                {category.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className={`rounded-lg px-2 py-1 text-xs ${category.tagColor}`}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <button className="flex w-full items-center justify-between p-0.5 py-2 text-sm font-medium">
+              Explore
+
+              <span className="rounded-md bg-neutral-200 p-1">
+                <BiRightArrowAlt size={18} />
+              </span>
             </button>
           </div>
-        </div>
-
-        {/* Profile content */}
-        <div className="flex min-h-50 pt-10 flex-col justify-center space-y-2 px-4 text-xs text-neutral-200">
-          <div className='tracking-wider'>
-            <h1 className="text-lg font-bold leading-6">Negative</h1>
-            <p className="text-neutral-400">@negative</p>
-          </div>
-
-          <p className="text-neutral-300">
-            I am a design engineer,
-            who can code frontend of web and mobile apps with clean UI.
-          </p>
-
-          <div className="flex gap-4">
-            <span>
-              <span className="text-neutral-400">583 </span>
-              following
-            </span>
-
-            <span>
-              <span className="text-neutral-400">43.7k </span>
-              followers
-            </span>
-          </div>
-
-          <div className='flex items-center gap-1'>
-            <Link size={11} />
-            <a
-              href="https://pacet.com"
-              target="_blank"
-              rel="noreferrer"
-              className="w-fit text-blue-400 transition-colors hover:text-blue-300"
-            >
-              Portfolio.negativ.in
-            </a>
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
     </main>
   )
 }
